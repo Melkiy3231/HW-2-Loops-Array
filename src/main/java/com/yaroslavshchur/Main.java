@@ -88,7 +88,7 @@ public class Main {
         }
         System.out.println(" ");
     }
-    private static void replaceDublicates(int[] massive) {
+    public static void replaceDublicates(int[] massive) {
         for (int j = 0; j < massive.length; j++) {
             for (int i = j + 1; i < massive.length; i++) {
                 if (massive[j] == massive[i]) {
