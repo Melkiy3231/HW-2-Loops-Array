@@ -8,7 +8,7 @@ public class Main {
         maxOfArray(array);
         sortAscending(array);
         sortDescending(array);
-        SumOfElements(array);
+        sumArrayElem(array);
         arraySquaring(array);
         secondTask();
         int[] massive = new int[]{3, 2, 3, 1, 4, 2, 8, 3};
@@ -39,12 +39,12 @@ public class Main {
         }
         System.out.println("Max of array is : " + max);
     }
-    public static void SumOfElements(int[] array) {
+    public static void sumArrayElem(int[] array) {
         int add = 0;
         for (int value : array) {
             add = add + value;
         }
-        System.out.println("SumOfElements : " + add);
+        System.out.println("sumArrayElem : " + add);
     }
     public static void sortAscending(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
@@ -76,7 +76,7 @@ public class Main {
         }
         printArray(array);
     }
-    static void secondTask() {
+   public static void secondTask() {
         String[][] array = {
                 {"I",  "can", "help", "you?"}
                 , {"I", "love", "to eat", "pie"}
