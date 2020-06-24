@@ -3,25 +3,25 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] array = new int[20];
-        random(array);
-        minOfArray(array);
-        maxOfArray(array);
-        sortAscending(array);
-        sortDescending(array);
-        sumArrayElem(array);
-        arraySquaring(array);
+        getrandom(array);
+        getminOfArray(array);
+        getmaxOfArray(array);
+        getsortAscending(array);
+        getsortDescending(array);
+        getsumArrayElem(array);
+        getarraySquaring(array);
         secondTask();
         int[] massive = new int[]{3, 2, 3, 1, 4, 2, 8, 3};
         replaceDublicates(massive);
     }
-    public static void random(int[] array) {
+    public static void getrandom(int[] array) {
         for (int x = 0; x < array.length; x++) {
             array[x] = (int) (Math.random() * 50);
 
         }
         printArray(array);
     }
-    public static void minOfArray(int[] array) {
+    public static void getminOfArray(int[] array) {
         int min = array[0];
         for (int i : array) {
             if (min > i) {
@@ -30,7 +30,7 @@ public class Main {
         }
         System.out.println("Min of array is : " + min);
     }
-    public static void maxOfArray(int[] array) {
+    public static void getmaxOfArray(int[] array) {
         int max = array[0];
         for (int i : array) {
             if (max < i) {
@@ -39,14 +39,14 @@ public class Main {
         }
         System.out.println("Max of array is : " + max);
     }
-    public static void sumArrayElem(int[] array) {
+    public static void getsumArrayElem(int[] array) {
         int add = 0;
         for (int value : array) {
             add = add + value;
         }
         System.out.println("sumArrayElem : " + add);
     }
-    public static void sortAscending(int[] array) {
+    public static void getsortAscending(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
             for (int k = 0; k < i; k++) {
                 if (array[k] > array [k + 1]) {
@@ -58,7 +58,7 @@ public class Main {
         }
         printArray(array);
     }
-    public static void sortDescending(int[] array) {
+    public static void getsortDescending(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
             for (int k = 0; k < i; k++) {
                 if (array[k] < array[k + 1]) {
@@ -70,7 +70,7 @@ public class Main {
         }
         printArray(array);
     }
-    public static void arraySquaring(int[] array) {
+    public static void getarraySquaring(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) Math.pow(array[i], 2);
         }
