@@ -30,7 +30,7 @@ public class Main {
         }
         System.out.println("Min of array is : " + min);
     }
-    public static void getMaxOfArray((int[] array) {
+    public static void getMaxOfArray(int[] array) {
         int max = array[0];
         for (int i : array) {
             if (max < i) {
