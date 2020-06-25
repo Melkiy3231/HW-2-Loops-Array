@@ -3,25 +3,25 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[] array = new int[20];
-        getrandom(array);
-        getminOfArray(array);
-        getmaxOfArray(array);
-        getsortAscending(array);
-        getsortDescending(array);
-        getsumArrayElem(array);
-        getarraySquaring(array);
-        secondTask();
+        getRandom(array);
+        getMinOfArray(array);
+        getMaxOfArray(array);
+        getSortAscending(array);
+        getSortDescending(array);
+        getSumArrayElem(array);
+        getArraySquaring(array);
+        operationWithMatrix();
         int[] massive = new int[]{3, 2, 3, 1, 4, 2, 8, 3};
         replaceDublicates(massive);
     }
-    public static void getrandom(int[] array) {
+    public static void getRandom(int[] array) {
         for (int x = 0; x < array.length; x++) {
             array[x] = (int) (Math.random() * 50);
 
         }
         printArray(array);
     }
-    public static void getminOfArray(int[] array) {
+    public static void  getMinOfArray(int[] array) {
         int min = array[0];
         for (int i : array) {
             if (min > i) {
@@ -30,7 +30,7 @@ public class Main {
         }
         System.out.println("Min of array is : " + min);
     }
-    public static void getmaxOfArray(int[] array) {
+    public static void getMaxOfArray((int[] array) {
         int max = array[0];
         for (int i : array) {
             if (max < i) {
@@ -39,14 +39,14 @@ public class Main {
         }
         System.out.println("Max of array is : " + max);
     }
-    public static void getsumArrayElem(int[] array) {
+    public static void getSumArrayElem(int[] array) {
         int add = 0;
         for (int value : array) {
             add = add + value;
         }
         System.out.println("sumArrayElem : " + add);
     }
-    public static void getsortAscending(int[] array) {
+    public static void getSortAscending(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
             for (int k = 0; k < i; k++) {
                 if (array[k] > array [k + 1]) {
@@ -58,7 +58,7 @@ public class Main {
         }
         printArray(array);
     }
-    public static void getsortDescending(int[] array) {
+    public static void getSortDescending(int[] array) {
         for (int i = array.length - 1; i > 0; i--) {
             for (int k = 0; k < i; k++) {
                 if (array[k] < array[k + 1]) {
@@ -70,13 +70,13 @@ public class Main {
         }
         printArray(array);
     }
-    public static void getarraySquaring(int[] array) {
+    public static void  getArraySquaring(int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) Math.pow(array[i], 2);
         }
         printArray(array);
     }
-   public static void secondTask() {
+   public static void  operationWithMatrix(){
         String[][] array = {
                 {"I",  "can", "help", "you?"}
                 , {"I", "love", "to eat", "pie"}
